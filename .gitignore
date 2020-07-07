@@ -34,7 +34,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-
+yarn.lock
 # BUCK
 buck-out/
 \.buckd/
@@ -57,3 +57,13 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+api-9156035982212042595-436633-c47500e4dfce.json
+
+# react-native-config codegen
+ios/tmp.xcconfig
+
+#fastlane ad-hoc export
+/manifest.plist
+/app-thinning.plist
+/App Thinning Size Report.txt

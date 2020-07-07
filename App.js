@@ -16,10 +16,6 @@ import messaging from '@react-native-firebase/messaging';
 
 async function requestUserPermission() {
   const authorizationStatus = await messaging().requestPermission();
-
-  if (authorizationStatus) {
-    console.log('Permission status:', authorizationStatus);
-  }
 }
 
 export default class example extends Component {
@@ -43,8 +39,8 @@ export default class example extends Component {
         }
       });
 
-    SplashScreen.hide();
     requestUserPermission();
+    SplashScreen.hide();
   }
 
   render() {
